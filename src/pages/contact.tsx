@@ -87,7 +87,7 @@ const Booking = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-2">Select a Date & Time</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Choose from our available slots and tell us about your event
+              Choose from our available events and tell us about your event 
             </p>
           </div>
           

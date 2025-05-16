@@ -45,16 +45,10 @@ const Index = () => {
             <div>
               <h2 className="text-3xl font-bold text-white mb-2">Our Services</h2>
               <p className="text-gray-400 max-w-2xl">
-                Professional equipment and expert technicians for all your sound and lighting needs
+                Seamless ticketing, government ID verification, and anti-resale technology to protect your event and your audience.
               </p>
             </div>
-            <Link 
-              to="/services"
-              className="mt-4 sm:mt-0 flex items-center text-psyco-green-DEFAULT hover:text-psyco-green-light transition-colors"
-            >
-              View all services
-              <MoveRight className="ml-1 h-4 w-4" />
-            </Link>
+            
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -76,14 +70,16 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-2">Perfect for Any Event</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              We provide custom sound and lighting solutions for a wide range of events
+              Empowering events with secure digital tickets, fraud-proof verification, and zero-resale assurance for ultimate trust and transparency.
+
+
             </p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
               { name: "Concerts", icon: <Volume2 size={32} /> },
-              { name: "Weddings", icon: <PartyPopper size={32} /> },
+              { name: "Sports", icon: <PartyPopper size={32} /> },
               { name: "Corporate", icon: <CalendarDays size={32} /> },
               { name: "Festivals", icon: <Music2 size={32} /> }
             ].map((event, index) => (

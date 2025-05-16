@@ -1,6 +1,6 @@
 
 import React, { useEffect } from "react";
-import TestimonialCard from "@/components/TestimonialCard";
+
 import { Star, Award, Building, Users, CheckCircle, MoveRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,56 +11,7 @@ const References = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      position: "Event Coordinator",
-      company: "Eventify",
-      testimonial: "The Psycotik Crew delivered an exceptional experience for our corporate event. The sound quality was impeccable and the lighting effects created exactly the atmosphere we wanted. The team was professional from start to finish, handling setup and teardown with minimal disruption.",
-      rating: 5,
-      imageSrc: "https://randomuser.me/api/portraits/women/32.jpg"
-    },
-    {
-      name: "Mark Williams",
-      position: "Wedding Planner",
-      company: "Perfect Day Weddings",
-      testimonial: "We've worked with many sound and light providers, but Psycotik Crew stands out for their professionalism and attention to detail. Our clients always rave about their service. They understand the importance of creating the right mood for different parts of the wedding celebration.",
-      rating: 5,
-      imageSrc: "https://randomuser.me/api/portraits/men/57.jpg"
-    },
-    {
-      name: "Emily Turner",
-      position: "Festival Director",
-      company: "Urban Music Festival",
-      testimonial: "For three years in a row, Psycotik Crew has been our go-to for festival sound and lighting. Their team handles everything from setup to teardown with amazing efficiency. They always have backup plans for outdoor conditions and have never let us down.",
-      rating: 4,
-      imageSrc: "https://randomuser.me/api/portraits/women/45.jpg"
-    },
-    {
-      name: "James Rodriguez",
-      position: "Club Owner",
-      company: "Pulse Nightclub",
-      testimonial: "We upgraded our entire sound and lighting system with Psycotik Crew's help. Their expertise in selecting the right equipment for our space was invaluable. Our customers immediately noticed the improvement in sound quality and immersive lighting effects.",
-      rating: 5,
-      imageSrc: "https://randomuser.me/api/portraits/men/23.jpg"
-    },
-    {
-      name: "Lisa Chen",
-      position: "Marketing Director",
-      company: "TechCorp Solutions",
-      testimonial: "Our annual company gala needed a special touch, and Psycotik Crew delivered beyond our expectations. They incorporated our brand colors into the lighting design and ensured perfect audio for our presentations and live band performance.",
-      rating: 5,
-      imageSrc: "https://randomuser.me/api/portraits/women/69.jpg"
-    },
-    {
-      name: "David Thompson",
-      position: "Band Manager",
-      company: "The Resonators",
-      testimonial: "Working with Psycotik Crew on our European tour was a great experience. Their team's technical knowledge ensured consistent sound quality across diverse venues, and they were incredibly responsive to our band's specific requirements.",
-      rating: 4,
-      imageSrc: "https://randomuser.me/api/portraits/men/72.jpg"
-    }
-  ];
+  
   
   const clientLogos = [
     {
@@ -236,16 +187,7 @@ const References = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                {...testimonial}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              />
-            ))}
-          </div>
+        
         </div>
       </section>
       
@@ -258,19 +200,10 @@ const References = () => {
               We're proud to work with these amazing clients
             </p>
           </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {clientLogos.map((client, index) => (
-              <div
-                key={index}
-                className="glassmorphism p-4 flex items-center justify-center h-24 animate-fade-in card-hover"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <img src={client.logo} alt={client.name} className="max-h-12 max-w-full" />
-              </div>
-            ))}
+          img
           </div>
-        </div>
+          
+          
       </section>
       
       {/* Featured Project */}

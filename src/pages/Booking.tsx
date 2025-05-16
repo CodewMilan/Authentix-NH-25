@@ -41,7 +41,7 @@ const Booking = () => {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Book Our Services</h1>
             <p className="text-xl text-gray-300 mb-8 animate-fade-in animation-delay-100">
-              Ready to host your next big event without the worry of reselling or fake tickets? List your event on Authentix and enjoy a secure, seamless experience with verified attendees only.
+              Ready to host next big event without the worry of reselling or fake tickets? List your event on Authentix and enjoy a secure, seamless experience with verified attendees only.
             </p>
           </div>
         </div>
@@ -159,12 +159,12 @@ const Booking = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">+44 123 456 7890</span>
+                    <span className="text-white">+91-9686720494</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">booking@psycotikcrew.com</span>
+                    <span className="text-white">authentix@gmail.com</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">

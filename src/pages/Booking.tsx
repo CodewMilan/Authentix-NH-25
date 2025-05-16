@@ -129,7 +129,7 @@ const Booking = () => {
               },
               {
                 question: "What is your cancellation policy?",
-                answer: "Cancellations made 30+ days before the event receive a full deposit refund. Cancellations within 14-30 days receive a 50% deposit refund. Cancellations under 14 days are non-refundable."
+                answer: "Tickets can be fully refunded if canceled at least 10 days before the event and if not yet verified with a government ID. After that, a 30% refund is issued. No refunds are given once ID verification is completed."
               }
             ].map((faq, index) => (
               <div 

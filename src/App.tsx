@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
-import References from "./pages/References";
+import References from "./pages/contact";
 import Booking from "./pages/Booking";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";

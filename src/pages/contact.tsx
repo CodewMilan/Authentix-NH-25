@@ -200,7 +200,9 @@ const References = () => {
               We're proud to work with these amazing clients
             </p>
           </div>
-          img
+
+          <div className="flex justify-center"><img src="./nmitlogo.webp" alt="" width={400} height={40}/></div>
+          
           </div>
           
           

@@ -244,24 +244,7 @@ const References = () => {
         </div>
       </section>
       
-      {/* CTA Section */}
-      <section className="py-16 px-6 md:px-12 bg-psyco-black-light">
-        <div className="max-w-7xl mx-auto">
-          <div className="glassmorphism p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">Ready to Create Your Success Story?</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-              Join our growing list of satisfied clients. Let's discuss how we can make your next event exceptional.
-            </p>
-            <Link
-              to="/booking"
-              className="inline-flex items-center bg-psyco-green-DEFAULT hover:bg-psyco-green-dark text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 btn-glow"
-            >
-              Book a Consultation
-              <MoveRight className="ml-2 h-5 w-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };

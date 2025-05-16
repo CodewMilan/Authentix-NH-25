@@ -77,10 +77,11 @@ const Blog = () => {
   ];
   
   const categories = [
-    "All",
-    "Sound",
-    "Lighting",
-    "DJ",
+    "Sports",
+    "Stand Up Comedy",
+    "Concerts",
+    "Festivals",
+    "Theater",
     "Technical"
   ];
   
@@ -102,9 +103,9 @@ const Blog = () => {
       <section className="bg-psyco-black-light py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Blog & Insights</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Events That Matter</h1>
             <p className="text-xl text-gray-300 mb-8 animate-fade-in animation-delay-100">
-              Industry knowledge, technical tips, and event inspiration from our expert team
+              Discover exclusive, verified experiences — from stand-up shows to stadium thrillers — all with zero reselling and 100% authenticity.
             </p>
           </div>
           
@@ -120,7 +121,8 @@ const Blog = () => {
               />
             </div>
             
-            <div className="w-full md:w-1/2 flex gap-2 overflow-x-auto pb-2 no-scrollbar flex-nowrap md:justify-end">
+            <div className="w-full md:w-1/2 overflow-x-auto scrollbar-thin scrollbar-thumb-psyco-green-muted/50">
+             <div className="flex gap-2 min-w-max w-fit">
               {categories.map(category => (
                 <button
                   key={category}
@@ -134,6 +136,7 @@ const Blog = () => {
                   {category}
                 </button>
               ))}
+              </div>
             </div>
           </div>
         </div>

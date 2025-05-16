@@ -13,6 +13,7 @@ import Booking from "./pages/Booking";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Login from "./pages/login";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/references" element={<References />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </main>
         <Footer />

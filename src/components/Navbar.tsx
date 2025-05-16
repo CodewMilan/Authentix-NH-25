@@ -32,7 +32,7 @@ const Navbar = () => {
     { name: 'Explore', path: '/blog' },
     { name: 'About Us', path: '/references' },
     { name: 'Contact Us', path: '/booking' },
-    { name: 'Log In', path: '/' }
+    { name: 'Login', path: '/login' },
   ];
 
   return (

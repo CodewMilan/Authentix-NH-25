@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div className="flex items-center mb-4">
               <div className="bg-green-500/20 text-green-400 rounded-full px-4 py-1 text-sm font-medium inline-flex items-center">
                 <Sparkles className="h-3.5 w-3.5 mr-1" />
-                Premium Sound & Light Services
+                Event Hosting
               </div>
             </div>
             
@@ -58,8 +58,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-gray-300 mb-8">
-              Professional sound and lighting solutions that bring your event to life. 
-              From concerts to private parties, we deliver exceptional audiovisual experiences.
+             Advanced ticket authentication and verification system for concerts, events, and festivals. Designed to eliminate reselling, ensure fair access, and provide organizers with complete control
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

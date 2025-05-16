@@ -28,10 +28,11 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'References', path: '/references' },
-    { name: 'Booking', path: '/booking' },
+    { name: 'Tickets', path: '/services' },
+    { name: 'Explore', path: '/blog' },
+    { name: 'About Us', path: '/references' },
+    { name: 'Contact Us', path: '/booking' },
+    { name: 'Log In', path: '/' }
   ];
 
   return (
@@ -43,12 +44,8 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <NavLink to="/" className="flex items-center">
-          <div className="h-20 w-auto md:h-28 md:w-auto relative">
-            <img 
-              src="/lovable-uploads/5964f950-36a7-430c-a887-4eea91ad4973.png" 
-              alt="PSK Services Logo" 
-              className="h-full w-auto object-contain" 
-            />
+          <div className="h-20 w-auto md:h-28 md:w-auto relative flex items-center justify-center text-xl font-bold text-white">
+            AuthenTIX
           </div>
         </NavLink>
 

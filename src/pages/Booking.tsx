@@ -41,7 +41,7 @@ const Booking = () => {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Book Our Services</h1>
             <p className="text-xl text-gray-300 mb-8 animate-fade-in animation-delay-100">
-              Ready to elevate your event with professional sound and lighting? Use our simple booking process to secure your date.
+              Ready to host your next big event without the worry of reselling or fake tickets? List your event on Authentix and enjoy a secure, seamless experience with verified attendees only.
             </p>
           </div>
         </div>

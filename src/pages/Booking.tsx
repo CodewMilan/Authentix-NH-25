@@ -117,19 +117,26 @@ const Booking = () => {
               },
               {
                 question: "What happens after I submit my booking request?",
-                answer: "Our team will review your request and contact you within 24-48 hours to discuss details and provide a customized quote."
+                answer: "After purchase, you must verify your ticket using a valid government ID. This process binds the ticket to your identity, preventing reselling."
               },
               {
-                question: "Do you provide all necessary equipment?",
-                answer: "Yes, we provide all sound and lighting equipment needed for your event, including setup, operation, and teardown."
+                question: "Can I transfer my ticket to someone else?",
+                answer: "No. Once verified, the ticket is non-transferable and can only be used by the person who completed ID verification."
               },
               {
-                question: "Can I modify my booking after confirmation?",
-                answer: "Yes, modifications can be made up to 2 weeks before your event, subject to equipment and staff availability."
+                question: "Is my data stored securely?",
+                answer: "Yes. Authentix uses privacy-preserving technologies and encrypts all sensitive data. No personal data is stored on-chain."
               },
               {
                 question: "What is your cancellation policy?",
                 answer: "Tickets can be fully refunded if canceled at least 10 days before the event and if not yet verified with a government ID. After that, a 30% refund is issued. No refunds are given once ID verification is completed."
+              },
+              {
+                question: "Can I buy tickets for friends or family?",
+                answer: "Yes, but each ticket must be verified individually by the intended attendee using their own ID."
+              },{
+                question: "Why can’t I sell my ticket if I can’t attend?",
+                answer: "To ensure fairness and prevent black-market reselling, tickets are bound to your identity and cannot be transferred once verified."
               }
             ].map((faq, index) => (
               <div 

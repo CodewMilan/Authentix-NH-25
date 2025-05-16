@@ -177,19 +177,7 @@ const References = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
-      <section className="py-16 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">Client Testimonials</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Don't just take our word for it - here's what our clients have to say
-            </p>
-          </div>
-          
-        
-        </div>
-      </section>
+     
       
       {/* Clients Section */}
       <section className="py-16 px-6 md:px-12 bg-psyco-black-light">

@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Login from "./pages/login";
+import Payment from "./pages/payments";
 
 const queryClient = new QueryClient();
 
@@ -28,12 +29,14 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/explore" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/references" element={<References />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/payments" element={<Payment />} />
             <Route path="/login" element={<Login />} />
+            r
           </Routes>
         </main>
         <Footer />

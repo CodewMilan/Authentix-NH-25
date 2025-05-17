@@ -22,58 +22,10 @@ const Blog = () => {
       author: "Technical Crew",
       category: "Sound",
       imageSrc: "/lovable-uploads/8dced82a-6a2c-48ee-a060-463c28764183.png",
-      featured: true
+      featured: true,
+      price: "900"
     },
-    {
-      id: "2",
-      title: "The Evolution of Stage Lighting Technology",
-      excerpt: "From traditional par cans to modern LED fixtures and intelligent lighting, we explore how stage lighting has evolved over the decades.",
-      date: "February 22, 2023",
-      readTime: "7 min read",
-      author: "Maria Williams",
-      category: "Lighting",
-      imageSrc: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80"
-    },
-    {
-      id: "3",
-      title: "DJ Techniques That Get the Crowd Moving",
-      excerpt: "Experienced DJs share their secrets for reading the room and keeping the dance floor packed all night long.",
-      date: "March 10, 2023",
-      readTime: "6 min read",
-      author: "DJ Rhythm",
-      category: "DJ",
-      imageSrc: "https://images.unsplash.com/photo-1571266087814-e7360f035f25?auto=format&fit=crop&q=80"
-    },
-    {
-      id: "4",
-      title: "Setting Up the Perfect Festival Sound",
-      excerpt: "Special considerations for outdoor festival sound setups that ensure great audio experience for all attendees regardless of weather conditions.",
-      date: "April 5, 2023",
-      readTime: "8 min read",
-      author: "Alex Thompson",
-      category: "Sound",
-      imageSrc: "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&q=80"
-    },
-    {
-      id: "5",
-      title: "Creative Lighting Ideas for Corporate Events",
-      excerpt: "Elevate your corporate event with these innovative lighting techniques that create a professional yet engaging atmosphere.",
-      date: "May 18, 2023",
-      readTime: "4 min read",
-      author: "Sarah Johnson",
-      category: "Lighting",
-      imageSrc: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80"
-    },
-    {
-      id: "6",
-      title: "The Technical Rider: What Event Organizers Need to Know",
-      excerpt: "Understanding the technical requirements for performers and how to prepare your venue to meet these specifications.",
-      date: "June 30, 2023",
-      readTime: "9 min read",
-      author: "Michael Stevens",
-      category: "Technical",
-      imageSrc: "https://images.unsplash.com/photo-1608749333098-a1783ca4b4bf?auto=format&fit=crop&q=80"
-    }
+    
   ];
   
   const categories = [

@@ -64,27 +64,7 @@ const References = () => {
   ];
 
   const caseStudies = [
-    {
-      title: "Monegros Festival 2024 - Industry City PA",
-      description: "Delivered and operated a massive soundsystem setup for the Industry City stage at Monegros Festival, featuring custom stacks of speakers to handle the demanding desert conditions.",
-      image: "/lovable-uploads/b842764a-da80-4bba-a5ef-9411f04f3de6.png",
-      tags: ["Festival", "Outdoor", "High Power"],
-      readMoreLink: "#"
-    },
-    {
-      title: "Techno Revolution Club Installation",
-      description: "Designed and installed a permanent club sound system focused on precise low-end reproduction and immersive spatial audio for a premier underground venue.",
-      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80",
-      tags: ["Club", "Installation", "Custom Design"],
-      readMoreLink: "#"
-    },
-    {
-      title: "Corporate Summit 2023",
-      description: "Provided complete audio-visual solutions for a 3-day corporate event with multiple rooms requiring synchronized systems and perfect speech intelligibility.",
-      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80",
-      tags: ["Corporate", "Multi-Room", "Conference"],
-      readMoreLink: "#"
-    }
+    
   ];
 
   return (
@@ -129,12 +109,7 @@ const References = () => {
       {/* Case Studies Section - NEW */}
       <section className="py-16 px-6 md:px-12 bg-psyco-black-light">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">Featured Projects</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Explore some of our most impressive sound and lighting installations
-            </p>
-          </div>
+         
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((caseStudy, index) => (
@@ -184,9 +159,7 @@ const References = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-2">Trusted By</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              We're proud to work with these amazing clients
-            </p>
+
           </div>
 
           <div className="flex justify-center"><img src="./nmitlogo.webp" alt="" width={400} height={40}/></div>
@@ -199,48 +172,8 @@ const References = () => {
       {/* Featured Project */}
       <section className="py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">Featured Projects</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Some of our most memorable sound and lighting installations
-            </p>
-          </div>
+                    
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="glassmorphism p-1 h-full animate-fade-in">
-              <div className="relative h-full w-full overflow-hidden rounded-xl">
-                <img
-                  src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80"
-                  alt="Summer Music Festival"
-                  className="object-cover h-full w-full transition-transform duration-10000 hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT to-transparent flex flex-col justify-end p-6">
-                  <div className="bg-psyco-green-DEFAULT inline-block px-3 py-1 text-xs font-medium text-white rounded-full mb-2 self-start">
-                    Festival
-                  </div>
-                  <h3 className="text-2xl font-semibold text-white mb-2">Summer Music Festival 2023</h3>
-                  <p className="text-gray-300 mb-4">Complete sound system and dynamic lighting setup for the main stage, serving an audience of 15,000 people.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="glassmorphism p-1 h-full animate-fade-in animation-delay-100">
-              <div className="relative h-full w-full overflow-hidden rounded-xl">
-                <img
-                  src="https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&q=80"
-                  alt="Corporate Gala"
-                  className="object-cover h-full w-full transition-transform duration-10000 hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT to-transparent flex flex-col justify-end p-6">
-                  <div className="bg-psyco-green-DEFAULT inline-block px-3 py-1 text-xs font-medium text-white rounded-full mb-2 self-start">
-                    Corporate
-                  </div>
-                  <h3 className="text-2xl font-semibold text-white mb-2">TechCorp Annual Gala</h3>
-                  <p className="text-gray-300 mb-4">Custom lighting design incorporating brand colors and theme elements, with pristine audio for presentations and live music.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       

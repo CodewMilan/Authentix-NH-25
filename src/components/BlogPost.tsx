@@ -1,8 +1,9 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Calendar, Clock, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
 
 interface BlogPostProps {
   id: string;
@@ -16,6 +17,7 @@ interface BlogPostProps {
   featured?: boolean;
   className?: string;
   style?: React.CSSProperties;
+  price?: string;
 }
 
 const BlogPost = ({
@@ -29,8 +31,10 @@ const BlogPost = ({
   imageSrc,
   featured = false,
   className,
-  style
+  style,
+  price
 }: BlogPostProps) => {
+  const navigate = useNavigate();
   return (
     <article 
       className={cn(
@@ -79,7 +83,18 @@ const BlogPost = ({
             <span>{author}</span>
           </div>
         </div>
+        {price && (
+  <div className="mt-6 flex justify-between items-center">
+    <div className="text-lg text-psyco-green-light font-semibold">
+      ₹{price}
+    </div>
+    <button className="bg-psyco-green-DEFAULT hover:bg-psyco-green-dark text-white text-sm font-medium py-2 px-4 rounded-md transition-colors" onClick={() => navigate('/payments')}>
+      Buy Ticket
+    </button>
+  </div>
+)}
       </div>
+
     </article>
   );
 };

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -7,17 +6,22 @@ import { cn } from '@/lib/utils';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [user, setUser] = useState(null);
   const location = useLocation();
+
+  // Fetch login state from backend
+  useEffect(() => {
+    fetch('http://localhost:3000/api/user', {
+      credentials: 'include',
+    })
+      .then(res => res.json())
+      .then(data => setUser(data.user));
+  }, [location.pathname]); // refetch on route change
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 20);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -26,13 +30,20 @@ const Navbar = () => {
     setIsOpen(false);
   }, [location.pathname]);
 
+  const handleLogin = () => {
+    window.location.href = 'http://localhost:8080/login';
+  };
+
+  const handleLogout = () => {
+    window.location.href = 'http://localhost:3000/logout';
+  };
+
   const navLinks = [
     { name: 'Home', path: '/' },
-    
+   
     { name: 'Explore', path: '/blog' },
     { name: 'About Us', path: '/references' },
     { name: 'Contact Us', path: '/booking' },
-    { name: 'Login', path: '/login' },
   ];
 
   return (
@@ -65,6 +76,22 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
+
+          {/* Login / Logout Button */}
+          {user ? (
+            <button
+              className="text-white hover:text-red-400 transition-colors duration-300 text-sm font-medium tracking-wide"
+            >
+              Logout
+            </button>
+          ) : (
+            <button
+              onClick={handleLogin}
+              className="text-white hover:text-green-400 transition-colors duration-300 text-sm font-medium tracking-wide"
+            >
+              Login
+            </button>
+          )}
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -98,6 +125,23 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
+
+          {/* Mobile Login / Logout Button */}
+          {user ? (
+            <button
+              onClick={handleLogout}
+              className="text-white hover:text-red-400 py-2 text-xl transition-colors duration-300"
+            >
+              Logout
+            </button>
+          ) : (
+            <button
+              onClick={handleLogin}
+              className="text-white hover:text-green-400 py-2 text-xl transition-colors duration-300"
+            >
+              Login
+            </button>
+          )}
         </div>
       </div>
     </nav>

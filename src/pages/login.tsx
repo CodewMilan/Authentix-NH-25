@@ -13,8 +13,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   
   const handleGoogleSignIn = () => {
-    // Google sign-in logic would be implemented here
-    console.log('Google sign-in initiated');
+    window.location.href = 'http://localhost:3000/auth/google'; // NOT /login
   };
 
   return (
